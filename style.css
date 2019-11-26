@@ -1,0 +1,66 @@
+/* Navbar */
+.navbar-brand {
+    font-family: viga;
+    font-size: 18px;
+}
+.navbar-brand, .nav-link{
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/gambar-buah-apel-segar.jpg);
+    background-size: cover;
+  
+    margin-top: -50px;
+}
+
+.jumbotron .display-4 {
+    font-size: 30px;
+}
+
+.jumbotron .lead{
+    font-size: 15px;
+}
+
+.jumbotron .display-4, .lead{
+    color: white;
+    text-align: center;
+}
+.jumbotron .gambar1 {
+    margin-top: 80px;
+}
+
+
+/* Dekstop Version */
+@media (min-width: 992px) { 
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 15px;
+    }
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC ;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron{
+        margin-top: -50px;
+    }
+    .jumbotron .display-4 {
+        font-size: 40px;
+    }
+    
+ }
+
+section{
+    min-height: 420px;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Project</title>
+    
+</head>
+
+<body id="home" class="mt-5">
+
+    <!-- navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+<div class="container">
+  <a class="navbar-brand" href="#">Guntur Wicaksono</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#latar">Latar Belakang</a>
+      <a class="nav-item nav-link" href="#label">Label Penyakit</a>
+      <a class="nav-item nav-link" href="#program">Input Gambar dan Deteksi</a>
+      <a class="nav-item nav-link " href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <img src="img/FotoGuntur.jpg" width="25%" height="25%" class="rounded-circle img-thumbnail gambar1">
+        <h1 class="display-4">Guntur Wicaksono</h1>
+        <p class="lead">Implementasi Metode Convolution Neural Network Untuk Mendeteksi Penyakit Pada Daun Tanaman Apel</p>
+    </div>
+</div>
+
+<!-- Latar Belakang -->
+<section id="latar" class="latar">
+<div class="container">
+    <div class="row mb-4">
+        <div class="col text-center">
+            <h2>Latar Belakang</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-5 text-justify">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ea neque ullam aperiam voluptate rem reiciendis quo. Iusto, dolores, illo a veniam quod totam repellat possimus amet beatae tempore itaque!</p>
+        </div>
+        <div class="col-md-5 text-justify">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sint, iste molestias quas hic, dolores deserunt explicabo necessitatibus quod natus consequatur eveniet minus, autem tempore placeat inventore praesentium quisquam maiores!</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Label Penyakit -->
+<section id="label" class="label bg-light pb-4s">
+<div class="container">
+    <div class="row mb-4 pt-4">
+        <div class="col text-center">
+            <h2>Label Penyakit</h2>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md">
+            <div class="card">
+                <img src="img/apple_leaf/apple_scab.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Apple Scab</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <img src="img/apple_leaf/black_rot.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Black Rot</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <img src="img/apple_leaf/cedar_apple_rust.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cedar Apple Rust</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+                <div class="card">
+                    <img src="img/apple_leaf/healthy.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Healthy</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</section>
+
+<!-- Program -->
+<section id="program" >
+    <!-- Program Utama Deep Learning-->
+    <div class="container text-center">
+    <div class="row mb-4 pt-4">
+        <div class="col text-center">
+            <h2>Input Gambar dan Deteksi</h2>
+        </div>
+    </div>
+    <form id="apelform" enctype="multipart/form-data">
+        <input type="file" name="file" id="apelinput">
+        <button type="submit">kirim</button>
+    </form>
+    <div id="penyakit"></div>
+    <div id="gejala"></div>
+    <div id="penangan"></div>
+
+</div>
+
+</section>
+
+<!-- Contact Us -->
+<section id="contact" class="contact mb-5">
+    <div class="container">
+        <div class="row pt-4 mb-4">
+            <div class="col text-center">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 text-center">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Us</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <ul class="list-group">
+                        <li class="list-group-item"><h2>Location</h2></li>
+                        <li class="list-group-item">Universitas Nasional</li>
+                        <li class="list-group-item">Jl. Sawo Manila, RT.14/RW.3, Ps. Minggu, Kec. Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12520</li>
+                      </ul>
+            </div>
+
+            <div class="col-lg-6">
+               <form>
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea name="pesan" id="pesan" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    
+                </form> 
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    $(document).on('submit', '#apelform', function(e){
+        e.preventDefault();
+        var formData = new FormData();
+        formData.append('file', document.querySelector('#apelinput').files[0]);
+        console.log('aa',formData);
+        $.ajax({
+            type:'POST',
+            url:'http://127.0.0.1:5000/predict',
+            processData: false,
+            contentType: false,
+            async: false,
+            cache: false,
+            data : formData,
+            success: function(response){
+                    console.log('sucess--',response);
+                var data = response.penyakit.proba0;
+                $("#gejala").html(data.gejala);
+                $("#penyakit").html(data.nama);
+                $("#penangan").html(data.penangan);
+            }
+        });
+      });
+</script>
+<!-- Program Utama-->
+
+
+<footer class="bg-dark text-white">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col text-center">
+                <p>Copyright Guntur 2019</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
